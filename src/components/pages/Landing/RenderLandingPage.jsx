@@ -32,7 +32,15 @@ function RenderLandingPage(props) {
       </div>
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
-      {/* <div className="graphs-section"> */}
+
+      <div className="graphs-section"> 
+       <img className='grantRatesByOfficeImg' src={GrantRatesByOfficeImg}/>
+       <p>Search Grant Rates By Office</p>
+       <img className='grantRatesByNationalityImg' src={GrantRatesByNationalityImg}/>
+       <p>Search Grant Rates By Nationality</p>
+       <img className='grantRatesOverTimeImg' src={GrantRatesOverTimeImg}/>
+       <p>Search Grant Rates Over Time</p>
+       </div>
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -40,6 +48,12 @@ function RenderLandingPage(props) {
           onClick={() => history.push('/graphs')}
         >
           View the Data
+        </Button>
+        <Button
+        type='default'
+        style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+        >
+          Download the Data
         </Button>
       </div>
 
