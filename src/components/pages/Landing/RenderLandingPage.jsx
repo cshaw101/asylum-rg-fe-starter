@@ -91,9 +91,8 @@ function RenderLandingPage(props) {
       <div className='firstGraph'>
     <h3>36%</h3>
     <p>
-      By the end of the Trump administration, the average asylum office grant rate had
-       fallen 36 percent from an average of 44 percent in fiscal year 2016 to 28 percent 
-       in fiscal year 2020.
+      By the end of the Trump administration, the averageasylum office grant rate had
+       fallen 36 percent from an average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020.
        </p>
       </div>
       <div className='secondGraph'>
@@ -109,6 +108,7 @@ function RenderLandingPage(props) {
     was six times lower than the San Francisco asylum office.
        </p>
        </div>
+       </div>
       <div className='readMoreButton'>
       <Button
         type='default'
@@ -122,7 +122,6 @@ function RenderLandingPage(props) {
           Back To Top ^
         </p>
       </div>
-    </div>
   );
 }
 export default RenderLandingPage;
