@@ -33,14 +33,24 @@ function RenderLandingPage(props) {
 
       {/* Graphs Section: Add code here for the graphs section for your first ticket */}
 
-      <div className="graphs-section"> 
-       <img className='grantRatesByOfficeImg' src={GrantRatesByOfficeImg}/>
-       <p>Search Grant Rates By Office</p>
-       <img className='grantRatesByNationalityImg' src={GrantRatesByNationalityImg}/>
-       <p>Search Grant Rates By Nationality</p>
-       <img className='grantRatesOverTimeImg' src={GrantRatesOverTimeImg}/>
-       <p>Search Grant Rates Over Time</p>
+    <div className="graphs-section"> 
+    
+      <div className='graphContainer'>
+       <img className='grantRatesByOfficeImg' src={GrantRatesByOfficeImg} alt="Grant Rates By Office"/>
+       <h3>Search Grant Rates By Office</h3>
+      </div>
+      
+      <div className='graphContainer'>
+       <img className='grantRatesByNationalityImg' src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality"/>
+       <h3>Search Grant Rates By Nationality</h3>
        </div>
+
+      <div className='graphContainer'>
+       <img className='grantRatesOverTimeImg' src={GrantRatesOverTimeImg} alt="Grant Rates Over Time"/>
+       <h3>Search Grant Rates Over Time</h3>
+       </div>
+       </div>
+
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -55,7 +65,7 @@ function RenderLandingPage(props) {
         >
           Download the Data
         </Button>
-      </div>
+    </div>
 
       <div className="middle-section">
         <div className="hrf-img-container">
