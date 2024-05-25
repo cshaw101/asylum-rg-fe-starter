@@ -87,6 +87,7 @@ function RenderLandingPage(props) {
       <div className='bottom-section'>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         <h1>Systemic Disparity Insights</h1>
+      <div className='graph-row'>
       <div className='firstGraph'>
     <h3>36%</h3>
     <p>
@@ -107,6 +108,7 @@ function RenderLandingPage(props) {
     Between fiscal year 2017 and 2020, the New York asylum office’s average grant rate 
     was six times lower than the San Francisco asylum office.
        </p>
+       </div>
       <div className='readMoreButton'>
       <Button
         type='default'
