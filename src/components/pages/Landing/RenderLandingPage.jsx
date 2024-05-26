@@ -91,7 +91,7 @@ function RenderLandingPage(props) {
       <div className='firstGraph'>
     <h3>36%</h3>
     <p>
-      By the end of the Trump administration, the averageasylum office grant rate had
+      By the end of the Trump administration, the average<br/>asylum office grant rate had
        fallen 36 percent from an average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020.
        </p>
       </div>
@@ -104,7 +104,7 @@ function RenderLandingPage(props) {
       <div className='thirdGraph'>
     <h3>6x Lower</h3>
     <p>
-    Between fiscal year 2017 and 2020, the New York asylum office’s average grant rate 
+    Between fiscal year 2017 and 2020, the New York<br/>asylum office’s average grant rate 
     was six times lower than the San Francisco asylum office.
        </p>
        </div>

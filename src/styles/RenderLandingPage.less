@@ -47,6 +47,11 @@
     align-items: center;
     margin-top: auto;
 }
+.graphContainer {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
 .graphContainer h3 {
 padding-top: 20px;
 padding-bottom: 20px;
@@ -117,16 +122,23 @@ font-family: "acumin";
       
       .graph-row {
         display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
         width: 100%;
+        
+      }
+      .firstGraph {
+        justify-content: space-evenly;
+        align-items: center;
+        
+      }
+      .secondGraph {
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .thirdGraph {
+        justify-content: space-evenly;
+        align-items: center;
       }
       
-      .graphContainer {
-        flex: 1;
-        margin: 10px;
-        text-align: center;
-      }
       .firstGraph h3 {
         font-size: 45px;
       }
@@ -141,20 +153,15 @@ font-family: "acumin";
 
       .firstGraph p {
         font-size: 15px;
-        overflow-wrap: break-word;
-    white-space: normal;
+        
       }
 
       .secondGraph p {
         font-size: 15px;
-        word-break: break-all;
-        white-space: normal;
       }
       
       .thirdGraph p {
         font-size: 15px;
-        word-break: break-all;
-    white-space: normal;
       }
       
 
