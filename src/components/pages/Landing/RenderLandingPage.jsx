@@ -87,24 +87,24 @@ function RenderLandingPage(props) {
       <div className='bottom-section'>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         <h1>Systemic Disparity Insights</h1>
-      <div className='graph-row'>
-      <div className='firstGraph'>
+      <div className='bottom-section-text' >
+      <div className='stat'>
     <h3>36%</h3>
     <p>
-      By the end of the Trump administration, the average<br/>asylum office grant rate had
+      By the end of the Trump administration, the average asylum office grant rate had
        fallen 36 percent from an average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020.
        </p>
       </div>
-      <div className='secondGraph'>
+      <div className='stat'>
     <h3>5%</h3>
     <p>
     The New York asylum office grant rate dropped to 5 percent in fiscal year 2020.
        </p>
       </div>
-      <div className='thirdGraph'>
+      <div className='stat'>
     <h3>6x Lower</h3>
     <p>
-    Between fiscal year 2017 and 2020, the New York<br/>asylum office’s average grant rate 
+    Between fiscal year 2017 and 2020, the New York asylum office’s average grant rate 
     was six times lower than the San Francisco asylum office.
        </p>
        </div>
