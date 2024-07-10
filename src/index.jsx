@@ -23,7 +23,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import reducer from './state/reducers';
 import { colors } from './styles/data_vis_colors';
 //import { createRoot } from 'react-dom/client';
-import { Auth0Provider } from '@auth0/auth0-react';
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
 
 
 
@@ -39,15 +39,9 @@ ReactDOM.render(
     /**
      * fix the login and logout components to include auth0
      */}
-      <Auth0Provider    //wrapped authprovider around the root
-    domain="dev-48v113ivkpmsg037.us.auth0.com"
-    clientId="s0B8ZInFihNVcJLYNOigQvC58oFcgQ9q"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }}
-  >
+      <Auth0ProviderWithHistory>
     <App />
-  </Auth0Provider>,
+    </Auth0ProviderWithHistory>,
     </Provider>
   </Router>,
   document.getElementById('root')
