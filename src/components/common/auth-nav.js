@@ -1,8 +1,8 @@
 import React from 'react';
 import AuthenticationButton from './authentication-button';
 
-const AuthNav = () => (
-  <div className="navbar-nav ml-auto">
+const AuthNav = ({ linkStyle }) => (
+  <div className="navbar-nav ml-auto" style={linkStyle}>
     <AuthenticationButton />
   </div>
 );

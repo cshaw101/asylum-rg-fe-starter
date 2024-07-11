@@ -1,11 +1,16 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const LogoutButton = () => {
+const LogoutButton = ({ linkStyle }) => {
   const { logout } = useAuth0();
   return (
     <button
-      className="btn btn-danger btn-block"
+      style={{ 
+        ...linkStyle, 
+        backgroundColor: 'transparent', 
+        border: 'none', 
+        cursor: 'pointer', 
+      }}
       onClick={() =>
         logout({
           returnTo: window.location.origin,
