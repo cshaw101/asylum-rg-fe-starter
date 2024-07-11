@@ -24,7 +24,7 @@ import reducer from './state/reducers';
 import { colors } from './styles/data_vis_colors';
 //import { createRoot } from 'react-dom/client';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-
+import ProfilePage from './components/pages/profile/ProfilePage';
 
 
 
@@ -35,10 +35,6 @@ const store = configureStore({ reducer: reducer });
 ReactDOM.render(
   <Router>
     <Provider store={store}> 
-    {
-    /**
-     * fix the login and logout components to include auth0
-     */}
       <Auth0ProviderWithHistory>
     <App />
     </Auth0ProviderWithHistory>,
@@ -64,6 +60,7 @@ export function App() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/graphs" component={GraphsContainer} />
+        <Route path="/profile" component={ProfilePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer

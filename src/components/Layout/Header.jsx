@@ -36,6 +36,9 @@ function HeaderContent() {
         <Link to="/graphs" style={linkStyle}>
           Graphs
         </Link>
+        <Link to="/profile" style={linkStyle}>
+          Profile
+        </Link>
         <AuthNav linkStyle={linkStyle} />
       </div>
     </div>
