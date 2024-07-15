@@ -26,3 +26,6 @@ function ProfilePage() {
   );
 }
 export default ProfilePage;
+
+
+//fix profile so it shows more details
